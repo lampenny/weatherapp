@@ -6,7 +6,7 @@ export const WeeklyForecast = ({ futureData }: futureDataProps) => {
   return (
     <div className="mb-20">
       <div className="container text-center items-center flex flex-wrap py-3 px-3 my-3 justify-center bg-gradient-to-br from-indigo-400 to-blue-200 rounded-xl shadow">
-        <h1 className="text-xl font-semibold text-slate-50">7-day forecast</h1>
+        <h1 className="text-xl font-semibold text-slate-50">Weekly forecast</h1>
       </div>
 
       <div className="container bg-gradient-to-br from-indigo-400 to-blue-200 p-4 rounded-xl shadow">

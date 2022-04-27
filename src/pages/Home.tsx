@@ -20,13 +20,19 @@ const Home = () => {
 
   const searchLocation = (event: KeyboardEvent) => {
     if (event.key === "Enter") {
-      axios.get(currentUrl).then((response) => {
-        setData(response.data);
-      });
+      axios
+        .get(currentUrl)
+        .then((response) => {
+          setData(response.data);
+        })
+        .catch((err) => console.log(err));
 
-      axios.get(futureUrl).then((response) => {
-        setFutureData(response.data);
-      });
+      axios
+        .get(futureUrl)
+        .then((response) => {
+          setFutureData(response.data);
+        })
+        .catch((err) => console.log(err));
 
       setLocation("");
     }
