@@ -5,7 +5,7 @@ export const Map = (props: MapProps, { data }: any) => {
   const { center, zoom } = props;
 
   return (
-    <div className="container shadow">
+    <div data-testid="map-container" className="container shadow">
       <MapContainer center={center} zoom={zoom} scrollWheelZoom={false}>
         <ChangeView center={center} zoom={zoom} />
         <TileLayer

@@ -40,7 +40,10 @@ const Home = () => {
 
   return (
     <div className="self-center container">
-      <h1 className="font-extrabold m-3 text-center p-10 text-4xl text-indigo-500">
+      <h1
+        data-testid="title"
+        className="font-extrabold m-3 text-center p-10 text-4xl text-indigo-500"
+      >
         Daily Weather
       </h1>
       <SearchBar

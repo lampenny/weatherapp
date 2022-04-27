@@ -8,6 +8,7 @@ export const SearchBar: FC<SearchBarProps> = (props) => {
     <>
       <div className="text-center">
         <input
+          data-testid="search-bar"
           className="shadow text-center outline-0 rounded-2xl py-2 w-2/6"
           value={location}
           onChange={(event) => setLocation(event.target.value)}
